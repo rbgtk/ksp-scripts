@@ -1,5 +1,7 @@
 
 runpath("0:/lib/stage.ks").
+runpath("0:/lib/maneuver.ks").
+runpath("0:/lib/circularize.ks").
 
 set countdownSeconds to 5.
 set targetApoapsis to 120000.
@@ -42,4 +44,7 @@ wait until sas.
 set sasmode to "prograde".
 
 print "Ascent complete.".
+
+set circularManeuverNode to createCircularManeuverNode().
+executeManeuver(circularManeuverNode).
 
