@@ -1,0 +1,19 @@
+function main {
+  local maneuver = createManeuverNode().
+  runpath("0:/maneuver.ks", maneuver).
+}
+
+function createManeuverNode {
+  local time is timespan(eta:apoapsis).
+  local radial is 0.
+  local normal is 0.
+  local prograde is 0.
+
+  local maneuver is node(time, radial, normal, prograde).
+
+  // improve maneuver
+
+  return maneuver.
+}
+
+main().
