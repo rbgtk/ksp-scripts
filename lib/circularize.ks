@@ -1,9 +1,4 @@
-function main {
-  local maneuver = createManeuverNode().
-  runpath("0:/maneuver.ks", maneuver).
-}
-
-function createManeuverNode {
+function createCircularManeuverNode {
   local time is timespan(eta:apoapsis).
   local radial is 0.
   local normal is 0.
@@ -13,9 +8,8 @@ function createManeuverNode {
 
   until maneuver:orbit:eccentrity < 0.001 {
     set maneuver is improveManeuver(maneuver).
-  
+  }
 
   return maneuver.
 }
 
-main().

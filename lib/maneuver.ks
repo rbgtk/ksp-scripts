@@ -1,7 +1,7 @@
-parameter maneuver.
+function executeManeuver {
+  parameter maneuverNode. // type: node
 
-function main {
-
+  add maneuverNode.
+  
+  
 }
-
-main().
