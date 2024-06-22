@@ -25,7 +25,7 @@ until ascentComplete {
   safeStage().
 
   until ship:apoapsis > targetApoapsis {
-    // stage when needed
+    autoStage().
   }
 
   lock throttle to 0.
