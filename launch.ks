@@ -38,6 +38,7 @@ unlock throttle.
 unlock steering.
 
 sas on.
+wait until sas.
 set sasmode to "prograde".
 
 print "Ascent complete.".
