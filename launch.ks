@@ -28,14 +28,14 @@ until ascentComplete {
     autoStage().
   }
 
-  set throttle to 0.
-
-  unlock throttle.
-  unlock steering.
-
   set ascentComplete to true.
 
 }
+
+lock throttle to 0.
+
+unlock throttle.
+unlock steering.
 
 sas on.
 set sasmode to "prograde".
