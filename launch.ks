@@ -36,15 +36,10 @@ until ascentComplete {
 
 lock throttle to 0.
 
-unlock throttle.
-unlock steering.
-
-sas on.
-wait until sas.
-set sasmode to "prograde".
-
 print "Ascent complete.".
 
-set circularManeuverNode to createCircularManeuverNode().
+wait until ship:altitude > ship:body:atm:height.
+
+local circularManeuverNode to createCircularManeuverNode().
 executeManeuver(circularManeuverNode).
 
