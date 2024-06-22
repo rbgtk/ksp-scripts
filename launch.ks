@@ -33,11 +33,12 @@ until ascentComplete {
   unlock throttle.
   unlock steering.
 
-  sas on.
-  set sasmode to "prograde".
-
   set ascentComplete to true.
+
 }
 
-print "Initial ascent complete".
-print "Circularizing soon".
+sas on.
+set sasmode to "prograde".
+
+print "Ascent complete.".
+
