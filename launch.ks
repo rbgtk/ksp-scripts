@@ -28,9 +28,16 @@ until ascentComplete {
     autoStage().
   }
 
-  lock throttle to 0.
-  lock steering to heading(90,0,0).
+  set throttle to 0.
+
+  unlock throttle.
+  unlock steering.
+
+  sas on.
+  set sasmode to "prograde".
 
   set ascentComplete to true.
 }
 
+print "Initial ascent complete".
+print "Circularizing soon".
