@@ -2,7 +2,7 @@
 
 Set of KSP-KOS scripts that I use in modded KSP (1).
 
-Currently following the tutorial series by CheersKevin on [YouTube](https://www.youtube.com/playlist?list=PLb6UbFXBdbCoCm1e65qfDOCdK_qIBtX3D) to teach myself KOS. Also throwing some things in there to make the code more modular and reusable in various scenarios.
+Currently following the tutorial series by CheersKevin on [YouTube](https://www.youtube.com/playlist?list=PLb6UbFXBdbCoCm1e65qfDOCdK_qIBtX3D) or gisikw on [GitHub](https://github.com/gisikw) to teach myself KOS. Also throwing some things in there to make the code more modular and reusable in various scenarios.
 
 The basic gist is that you select the boot script for a KOS module in the VAB and it will auto-launch your ship to a stable, circularized orbit around Kerbin.
 
